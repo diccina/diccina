@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICCINA - UFBA</title>
+    <style>
+        :root {
+            --preto-chumbo: #2c3031;
+            --branco-gelo: #f7fafa;
+            --roxo: #752fc8;
+            --laranja-diccina: #e6482c;
+            --amarelo-limao: #d8e128;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            color: var(--preto-chumbo); 
+            background-color: var(--branco-gelo); 
+        }
+
+        header { 
+            background: var(--preto-chumbo); 
+            color: var(--branco-gelo); 
+            padding: 3rem 1rem; 
+            text-align: center;
+            border-bottom: 5px solid var(--roxo);
+        }
+
+        .logo-container {
+            background: white;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .logo-container img {
+            max-width: 90%;
+            height: auto;
+        }
+
+        nav { 
+            background: white; 
+            padding: 1rem; 
+            position: sticky; 
+            top: 0; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            text-align: center; 
+            z-index: 100; 
+        }
+
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: var(--roxo); 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--laranja-diccina); }
+
+        .container { 
+            max-width: 1100px; 
+            margin: 30px auto; 
+            background: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+        }
+
+        h2 { 
+            border-left: 8px solid var(--amarelo-limao); 
+            padding-left: 15px; 
+            color: var(--roxo); 
+            margin-top: 40px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Tabela de Egressos Customizada */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background: var(--preto-chumbo); color: white; text-align: left; padding: 15px; }
+        td { padding: 12px; border-bottom: 1px solid #eee; }
+        tr:hover { background-color: #f9f9f9; }
+
+        /* Estilo dos Membros e Publicações */
+        .card-item { 
+            border: 1px solid #eee; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+            border-left: 4px solid var(--roxo);
+        }
+        .card-item:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        
+        .badge { 
+            font-size: 0.75rem; 
+            padding: 4px 10px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            color: white;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .badge-doutorado { background: var(--laranja-diccina); }
+        .badge-mestrado { background: var(--roxo); }
+        .badge-graduacao { background: var(--amarelo-limao); color: var(--preto-chumbo); }
+
+        footer { 
+            text-align: center; 
+            padding: 50px; 
+            background: var(--preto-chumbo); 
+            color: #888; 
+            margin-top: 50px; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="logo-diccina.png" alt="Logo DICCINA">
+    </div>
+    <h1>DICCINA</h1>
+    <p>Diversidade e Criticidade nas Ciências Naturais</p>
+    <small>PPGEFHC | UFBA | UEFS</small>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#membros">Membros</a>
+    <a href="#egressos">Egressos</a>
+    <a href="#publicacoes">Produção</a>
+</nav>
+
+<div class="container">
+    
+    <section id="sobre">
+        <h2>O Grupo</h2>
+        <p>O Grupo de Pesquisa Diversidade e Criticidade nas Ciências Naturais (DICCINA) 
+            é composto por estudantes da pós-graduação, graduação e docentes que pesquisam 
+            o ensino de ciências a partir de uma perspectiva antiopressora da realidade social.</p>
+        <p>Investigamos as relações entre ciência, sociedade e educação, pautadas pela criticidade 
+            e pelo respeito à diversidade.</p>
+
+        <p>O grupo conta com as pesquisadoras <a href="http://lattes.cnpq.br/2448258167033465">Dra. 
+            Katemari Rosa</a>, professora do Instituto de Física da UFBA, 
+            e <a href="https://lattes.cnpq.br/9868206892511511">Dra. Paloma Nascimento dos Santos</a>, 
+            professora do Instituto de Química da UFBA. Ambas são docentes permanentes do Programa 
+            de Pós-graduação em Ensino, Filosofia e História das Ciências (PPGEFHC).</p>
+
+    </section>
+
+
+        <section id="agenda">
+        <h2>Agenda de Atividades</h2>
+        <div class="card-item" style="border-left-color: var(--amarelo-limao);">
+            <strong>Próximo Seminário Interno</strong>
+            <p>📅 Data: 30/03/2026 | 📍 Local: Sala de Reuniões - Instituto de Física</p>
+            <p><em>Pauta: Apresentação DICCINA, histórico e linhas de pesquisa.</em></p>
+            <p><em>Planejamento e cronograma 2026.</em></p>
+        </div>
+
+            <h3>Próximos Congressos</h3>
+        <ul>
+            <li><strong>ENPEC 2027:</strong> Informações em breve.</li>
+        </ul>
+            
+    </section>
+    
+    
+    <section id="membros">
+        <h2>Membros Atuais</h2>
+        <div class="card-item">
+            <span class="badge badge-doutorado">Doutorado</span><br>
+            <strong>Luziane Amaral de Jesus</strong>
+            <p>Projeto: "Escrevivências de mulheres negras nas licenciaturas em Física, 
+                Matemática e Química da Universidade Federal do Oeste da Bahia."</p>
+            <small><a href="http://lattes.cnpq.br/1408049970717995">Currículo Lattes</a></small>
+        </div>
+        <div class="card-item">
+            <span class="badge badge-mestrado">Mestrado</span><br>
+            <strong>Mar Domingos Soares</strong>
+            <p>Projeto: "Atraques Epistêmicos na Educação em Ciências"</p>
+            <small><a href="https://lattes.cnpq.br/7710831128096458">Currículo Lattes</a></small>
+        </div>
+    </section>
+
+    <section id="egressos">
+        <h2>Histórico (Egressos)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elton Bernardo Santos da Silva </th>
+                    <th>Mestrado</th>
+                    <th>2020 - 2022</th>
+                    <th>Identidades Encruzilhadas: intersecção entre as identidades 
+                        étnico-raciais e as identidades docentes de professores(as) de 
+                        química da cidade de Salvador-BA.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rebeca de Magalhães Dourado</td>
+                    <td>Graduação</td>
+                    <td>2020 - 2022</td>
+                    <td>Representações sociais sobre deficiência de futuros docentes 
+                        de física</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+</div>
+
+<footer>
+    <p>&copy; 2026 DICCINA - Grupo de Pesquisa Diversidade e Criticidade nas Ciências Naturais</p>
+    <p>Universidade Federal da Bahia</p>
+</footer>
+
+</body>
+</html>
